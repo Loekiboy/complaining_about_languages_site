@@ -1,0 +1,47 @@
+body {
+  background-color: #0c0c3d; /* Dit kleurt de volledige pagina */
+  margin: 0;                 /* Verwijdert de standaard witte randjes */
+  color: white;              /* Maakt alle tekst wit voor goed contrast */
+}
+
+/* 1. We definiëren de tril-beweging */
+@keyframes vibration {
+  0% { transform: translate(0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+/* 2. We passen de beweging toe op de klasse */
+.shake {
+  display: inline-block; /* Nodig om de tekst te kunnen laten bewegen */
+  color: #3f0606;        /* Misschien een opvallende rode kleur? */
+  font-weight: bold;
+  animation: vibration 0.4s infinite; /* 0.2 seconden, blijft herhalen */
+}
+
+.hero-simple {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #0c0c3d16;
+  border-bottom: 2px solid #eaeaea49;
+}
+
+.hero-simple h1 {
+  font-size: 3rem; 
+  color: #6c1313;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.content-section {
+  padding: 20px 20px;
+  text-align: center;
+}
+.content-section h2 {
+  font-size: 1.5rem; 
+  color: #6c1313;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
