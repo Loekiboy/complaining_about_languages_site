@@ -16,7 +16,7 @@ body {
 /* 2. We passen de beweging toe op de klasse */
 .shake {
   display: inline-block; /* Nodig om de tekst te kunnen laten bewegen */
-  color: #3f0606;        /* Misschien een opvallende rode kleur? */
+  color: #ff0000;        
   font-weight: bold;
   animation: vibration 0.4s infinite; /* 0.2 seconden, blijft herhalen */
 }
@@ -44,4 +44,67 @@ body {
   color: #6c1313;
   margin-bottom: 10px;
   font-family: 'Segoe UI', sans-serif;
+}
+.number-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* Licht transparant vak */
+}
+
+.number-table th, .number-table td {
+    padding: 15px;
+    border: 1px solid #eaeaea49;
+    text-align: left;
+}
+
+/* De kleuren voor de rijen */
+.correct {
+    color: #2ecc71; /* Mooi helder groen */
+}
+
+.wrong {
+    color: #e74c3c; /* Opvallend rood */
+}
+
+section {
+  max-width: 800px;    /* Dit zorgt dat de tekst niet te breed wordt */
+  margin: 0 auto;      /* Dit centreert de sectie in het midden van je 4K scherm */
+  padding: 40px 20px;  /* Wat ruimte boven en onder */
+  line-height: 1.6;    /* Zorgt voor meer ruimte tussen de regels tekst */
+}
+
+.number-table {
+  width: 100%;
+  max-width: 800px;    /* De tabel hoeft niet super breed te zijn */
+  margin: 20px auto;   /* Centreert de tabel binnen de sectie */
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.note-box {
+    font-size: 0.9rem;          /* Iets kleiner dan de normale tekst */
+    background-color: #1a1a4d;  /* Een tint lichter/donkerder dan je body */
+    border-left: 4px solid #6c1313; /* Een verticaal accentlijntje in jouw rode kleur */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-style: italic;         /* Maakt het nog meer een 'opmerking' */
+    color: #cccccc;             /* Iets zachter wit/grijs voor minder felheid */
+}
+
+.conclusion-box {
+    background-color: rgba(108, 19, 19, 0.1); /* Een heel zachte rode gloed */
+    border-top: 5px solid #6c1313;           /* Een stevige rode lijn aan de bovenkant */
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 0 0 8px 8px;              /* Alleen ronde hoeken aan de onderkant */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);  /* Een subtiele schaduw voor diepte */
+}
+
+.conclusion-box h3 {
+    margin-top: 0;
+    color: #6c1313;                          /* Dezelfde kleur als je titels */
+    text-transform: uppercase;               /* Maakt de kop extra krachtig */
+    letter-spacing: 1px;
 }
